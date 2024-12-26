@@ -18,8 +18,4 @@ public struct WeatherSDKConfiguration {
         self.enviroment = enviroment
     }
     
-    // Method to provide default configuration
-    public static func defaultConfiguration() -> WeatherSDKConfiguration {
-        return WeatherSDKConfiguration(language: "en",enviroment: "")
-    }
 }

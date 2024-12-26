@@ -15,7 +15,7 @@ public protocol WeatherSDKDelegate: AnyObject {
 }
 
 // MARK: - WeatherSDK Class (Interface)
-public final class CloneWeatherClass {
+public final class CloneWeather {
     public weak var delegate: WeatherSDKDelegate?
     
     // MARK: - Properties
