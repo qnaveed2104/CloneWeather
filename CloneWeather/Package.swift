@@ -1,36 +1,28 @@
-//
-//  Package.swift
-//  CloneWeather
-//
-//  Created by Qazi on 26/12/2024.
-//
-
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
     name: "CloneWeather",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v14) // Set the platform to iOS 14 or later
     ],
     products: [
         .library(
-            name: "CloneWeather",
-            targets: ["CloneWeather"]
+            name: "CloneWeather", // The name of the product (the framework)
+            targets: ["CloneWeather"] // The target(s) for the product
         ),
     ],
     dependencies: [
-        // Add any dependencies here
+        // Add any external dependencies here if needed (none for now)
     ],
     targets: [
         .target(
-            name: "CloneWeather",
-            url: "https://github.com/qnaveed2104/CloneWeather.git",
-            checksum: "ae4139dd0ff33009d82b12c12c888d8350efb0774379d8261268e4f78fdc7c14",
-            dependencies: []
+            name: "CloneWeather", // The name of the target (the actual framework)
+            dependencies: [] // No dependencies for now
         ),
         .testTarget(
-            name: "CloneWeatherTests",
-            dependencies: ["CloneWeather"]
+            name: "CloneWeatherTests", // Test target
+            dependencies: ["CloneWeather"] // Depends on the CloneWeather framework
         ),
     ]
 )
