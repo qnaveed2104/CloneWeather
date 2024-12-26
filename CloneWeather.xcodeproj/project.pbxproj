@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		700B4C542D1AB6BC0032176C /* CloneWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700B4C492D1AB6BC0032176C /* CloneWeather.framework */; };
+		700B4C872D1BF2710032176C /* WeatherSDKConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B4C852D1BF2710032176C /* WeatherSDKConfiguration.swift */; };
+		700B4C882D1BF2710032176C /* CloneWeather.docc in Sources */ = {isa = PBXBuildFile; fileRef = 700B4C822D1BF2710032176C /* CloneWeather.docc */; };
+		700B4C892D1BF2710032176C /* CloneWeather+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B4C842D1BF2710032176C /* CloneWeather+Ext.swift */; };
+		700B4C8A2D1BF2710032176C /* CloneWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B4C832D1BF2710032176C /* CloneWeather.swift */; };
+		700B4C8E2D1BF2E20032176C /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B4C8D2D1BF2E20032176C /* WeatherViewModel.swift */; };
+		700B4C902D1BF3210032176C /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B4C8F2D1BF3210032176C /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,27 +29,16 @@
 /* Begin PBXFileReference section */
 		700B4C492D1AB6BC0032176C /* CloneWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloneWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		700B4C532D1AB6BC0032176C /* CloneWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloneWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		700B4C822D1BF2710032176C /* CloneWeather.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CloneWeather.docc; sourceTree = "<group>"; };
+		700B4C832D1BF2710032176C /* CloneWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneWeather.swift; sourceTree = "<group>"; };
+		700B4C842D1BF2710032176C /* CloneWeather+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloneWeather+Ext.swift"; sourceTree = "<group>"; };
+		700B4C852D1BF2710032176C /* WeatherSDKConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSDKConfiguration.swift; sourceTree = "<group>"; };
+		700B4C8D2D1BF2E20032176C /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		700B4C8F2D1BF3210032176C /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		700B4CA12D1D4CB80032176C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		700B4C5B2D1AB6BC0032176C /* Exceptions for "CloneWeather" folder in "CloneWeather" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				CloneWeather.h,
-			);
-			target = 700B4C482D1AB6BC0032176C /* CloneWeather */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		700B4C4B2D1AB6BC0032176C /* CloneWeather */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				700B4C5B2D1AB6BC0032176C /* Exceptions for "CloneWeather" folder in "CloneWeather" target */,
-			);
-			path = CloneWeather;
-			sourceTree = "<group>";
-		};
 		700B4C572D1AB6BC0032176C /* CloneWeatherTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CloneWeatherTests;
@@ -73,7 +68,7 @@
 		700B4C3F2D1AB6BC0032176C = {
 			isa = PBXGroup;
 			children = (
-				700B4C4B2D1AB6BC0032176C /* CloneWeather */,
+				700B4C862D1BF2710032176C /* CloneWeather */,
 				700B4C572D1AB6BC0032176C /* CloneWeatherTests */,
 				700B4C4A2D1AB6BC0032176C /* Products */,
 			);
@@ -86,6 +81,36 @@
 				700B4C532D1AB6BC0032176C /* CloneWeatherTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		700B4C862D1BF2710032176C /* CloneWeather */ = {
+			isa = PBXGroup;
+			children = (
+				700B4C822D1BF2710032176C /* CloneWeather.docc */,
+				700B4C832D1BF2710032176C /* CloneWeather.swift */,
+				700B4C842D1BF2710032176C /* CloneWeather+Ext.swift */,
+				700B4C852D1BF2710032176C /* WeatherSDKConfiguration.swift */,
+				700B4C8B2D1BF27D0032176C /* Modules */,
+				700B4CA12D1D4CB80032176C /* Package.swift */,
+			);
+			path = CloneWeather;
+			sourceTree = "<group>";
+		};
+		700B4C8B2D1BF27D0032176C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				700B4C8C2D1BF28A0032176C /* Weather */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		700B4C8C2D1BF28A0032176C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				700B4C8D2D1BF2E20032176C /* WeatherViewModel.swift */,
+				700B4C8F2D1BF3210032176C /* WeatherView.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +138,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				700B4C4B2D1AB6BC0032176C /* CloneWeather */,
 			);
 			name = CloneWeather;
 			packageProductDependencies = (
@@ -207,6 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700B4C8E2D1BF2E20032176C /* WeatherViewModel.swift in Sources */,
+				700B4C872D1BF2710032176C /* WeatherSDKConfiguration.swift in Sources */,
+				700B4C882D1BF2710032176C /* CloneWeather.docc in Sources */,
+				700B4C902D1BF3210032176C /* WeatherView.swift in Sources */,
+				700B4C892D1BF2710032176C /* CloneWeather+Ext.swift in Sources */,
+				700B4C8A2D1BF2710032176C /* CloneWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +260,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -242,6 +272,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -252,11 +283,15 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = networkoperationapp.code.challange.CloneWeather;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -264,9 +299,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -274,6 +311,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +322,16 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = networkoperationapp.code.challange.CloneWeather;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
