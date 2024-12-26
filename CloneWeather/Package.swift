@@ -24,7 +24,7 @@ let package = Package(
     targets: [
         .target(
             name: "CloneWeather",
-            url: "https://drive.google.com/file/d/1CxuFvWlVHOLy0NaAHupXxJW_3FjU4PGv/view?usp=sharing",
+            url: "https://github.com/qnaveed2104/CloneWeather.git",
             checksum: "ae4139dd0ff33009d82b12c12c888d8350efb0774379d8261268e4f78fdc7c14",
             dependencies: []
         ),
