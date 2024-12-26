@@ -1,0 +1,15 @@
+{
+  "originHash" : "a98134d8a9af3a1f3ffa5b0bf381300e5c2c0674c8f5a594bf993a9e7c81fb24",
+  "pins" : [
+    {
+      "identity" : "cloneweather",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/qnaveed2104/CloneWeather.git",
+      "state" : {
+        "revision" : "2018a80be708f2b0d0d24151e98d9c57bd4d56d3",
+        "version" : "1.0.8"
+      }
+    }
+  ],
+  "version" : 3
+}
