@@ -83,9 +83,8 @@
 		700B4C862D1BF2710032176C /* CloneWeather */ = {
 			isa = PBXGroup;
 			children = (
-				700B4CA52D1D5F240032176C /* Sources */,
+				700B4CA52D1D5F240032176C /* Source */,
 				700B4C822D1BF2710032176C /* CloneWeather.docc */,
-				700B4C8B2D1BF27D0032176C /* Modules */,
 			);
 			path = CloneWeather;
 			sourceTree = "<group>";
@@ -107,21 +106,30 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		700B4CA52D1D5F240032176C /* Sources */ = {
+		700B4CA52D1D5F240032176C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				700B4CA62D1D5F320032176C /* CloneWeather */,
+				7056A1082D1DACEC0071096B /* Main */,
+				700B4CA62D1D5F320032176C /* Core */,
+				700B4C8B2D1BF27D0032176C /* Modules */,
 			);
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		700B4CA62D1D5F320032176C /* CloneWeather */ = {
+		700B4CA62D1D5F320032176C /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				700B4C852D1BF2710032176C /* WeatherSDKConfiguration.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7056A1082D1DACEC0071096B /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				700B4C832D1BF2710032176C /* CloneWeather.swift */,
 			);
-			path = CloneWeather;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
