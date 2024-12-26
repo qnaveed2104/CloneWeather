@@ -35,7 +35,7 @@
 		700B4C852D1BF2710032176C /* WeatherSDKConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSDKConfiguration.swift; sourceTree = "<group>"; };
 		700B4C8D2D1BF2E20032176C /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		700B4C8F2D1BF3210032176C /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
-		700B4CA12D1D4CB80032176C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		700B4CC02D1D7BD20032176C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -86,7 +86,7 @@
 		700B4C862D1BF2710032176C /* CloneWeather */ = {
 			isa = PBXGroup;
 			children = (
-				700B4CA12D1D4CB80032176C /* Package.swift */,
+				700B4CC02D1D7BD20032176C /* Package.swift */,
 				700B4CA52D1D5F240032176C /* Sources */,
 				700B4C822D1BF2710032176C /* CloneWeather.docc */,
 				700B4C8B2D1BF27D0032176C /* Modules */,
